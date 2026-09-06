@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "688886286809",
+    "project_id": "sathyabama-bus-tracker-2259a",
+    "storage_bucket": "sathyabama-bus-tracker-2259a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688886286809:android:d97655182f2518fa4071c8",
+        "android_client_info": {
+          "package_name": "com.example.college_bus_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTx1OD7NQX22-9pMsaSrNCz-rOOb0f-AE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
