@@ -1,15 +1,34 @@
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Network Access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Standard Location Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Background Location & Foreground Service Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
-        android:label="college_bus_tracker"
+        android:label="Sathyabama Bus Tracker"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
 
         <!-- Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyA2GTsuiEszxj3VAroIP8233hYjxEEXFIU" />
+
+        <!-- Background Service Component -->
+        <service
+            android:name="id.flutter.flutter_background_service.BackgroundService"
+            android:foregroundServiceType="location"
+            android:enabled="true"
+            android:exported="false" />
 
         <activity
             android:name=".MainActivity"
@@ -32,19 +51,10 @@
 
         </activity>
 
-        <!-- Flutter embedding -->
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
 
     </application>
-
-    <!-- Required for Flutter text processing -->
-    <queries>
-        <intent>
-            <action android:name="android.intent.action.PROCESS_TEXT" />
-            <data android:mimeType="text/plain" />
-        </intent>
-    </queries>
 
 </manifest>

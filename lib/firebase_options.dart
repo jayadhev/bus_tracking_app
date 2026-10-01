@@ -5,15 +5,6 @@ import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
-///
-/// Example:
-/// ```dart
-/// import 'firebase_options.dart';
-/// // ...
-/// await Firebase.initializeApp(
-///   options: DefaultFirebaseOptions.currentPlatform,
-/// );
-/// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -41,25 +32,27 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDGWZ0B4pDoTahmb_bElKcOFBF8taEU4Ec',
+    apiKey: 'AIzaSyA2GTsuiEszxj3VAroIP8233hYjxEEXFIU',
     appId: '1:688886286809:web:19317553f6a5e7584071c8',
     messagingSenderId: '688886286809',
     projectId: 'sathyabama-bus-tracker-2259a',
     authDomain: 'sathyabama-bus-tracker-2259a.firebaseapp.com',
     storageBucket: 'sathyabama-bus-tracker-2259a.firebasestorage.app',
     measurementId: 'G-29HBMLYDT9',
+    databaseURL: 'https://sathyabama-bus-tracker-2259a-default-rtdb.firebaseio.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDTx1OD7NQX22-9pMsaSrNCz-rOOb0f-AE',
+    apiKey: 'AIzaSyA2GTsuiEszxj3VAroIP8233hYjxEEXFIU',
     appId: '1:688886286809:android:d97655182f2518fa4071c8',
     messagingSenderId: '688886286809',
     projectId: 'sathyabama-bus-tracker-2259a',
     storageBucket: 'sathyabama-bus-tracker-2259a.firebasestorage.app',
+    databaseURL: 'https://sathyabama-bus-tracker-2259a-default-rtdb.firebaseio.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDDUKCOsH7YRp7T_rg0epJ3J8W-o-MwiEI',
+    apiKey: 'AIzaSyA2GTsuiEszxj3VAroIP8233hYjxEEXFIU',
     appId: '1:688886286809:ios:564d7a35dc74ac464071c8',
     messagingSenderId: '688886286809',
     projectId: 'sathyabama-bus-tracker-2259a',
@@ -68,7 +61,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDDUKCOsH7YRp7T_rg0epJ3J8W-o-MwiEI',
+    apiKey: 'AIzaSyA2GTsuiEszxj3VAroIP8233hYjxEEXFIU',
     appId: '1:688886286809:ios:564d7a35dc74ac464071c8',
     messagingSenderId: '688886286809',
     projectId: 'sathyabama-bus-tracker-2259a',
@@ -77,12 +70,13 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDGWZ0B4pDoTahmb_bElKcOFBF8taEU4Ec',
+    apiKey: 'AIzaSyA2GTsuiEszxj3VAroIP8233hYjxEEXFIU',
     appId: '1:688886286809:web:ed29eece41d078664071c8',
     messagingSenderId: '688886286809',
     projectId: 'sathyabama-bus-tracker-2259a',
     authDomain: 'sathyabama-bus-tracker-2259a.firebaseapp.com',
     storageBucket: 'sathyabama-bus-tracker-2259a.firebasestorage.app',
     measurementId: 'G-31QQBJ73NZ',
+    databaseURL: 'https://sathyabama-bus-tracker-2259a-default-rtdb.firebaseio.com',
   );
 }
